@@ -54,7 +54,7 @@ from collections import deque
 def connected_components_count(graph):
   count = 0
   visited = set()
-  for current in graph: #It helps to begin a traversal in separate components
+  for current in graph: # Iteration to hop to the separate components
     if helper(graph,current,visited) == True:
       count +=1
   return count
