@@ -41,15 +41,21 @@ lista = ['python','js','c##','java','c']
 #     return max
 # print(max_price([34.76,30.45,33.09,31.08,29.34,36.00]))
 
-def multi_int(nums):
-    output = []
-    current = 1
-    i = 0
-    while i < len(nums):
-        current = current * nums[i]       
-        output.append(current)
-        i+=1
-    return output
+# def multi_int(nums):
+#     output = []
+#     current = 1
+#     i = 0
+#     while i < len(nums):
+#         current = current * nums[i]       
+#         output.append(current)
+#         i+=1
+#     return output
 
 
-print(multi_int([1,2,3,4]))
+# print(multi_int([1,2,3,4]))
+# nums = [1,2,3,4]
+def swap(nums):
+    temp = nums[0]
+    nums[0] = nums[-1]
+    nums[-1] = temp
+    
